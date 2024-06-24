@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Shadows+Into+Light&display=swap');
+@font-face {
+    font-family: myFont;
+    src: url(BLOODY.TTF);
+}
+
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato";
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 80px 0 0 0;
+    font-size: 124px;
+    color: red;
+    font-family: myFont;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: red;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.container {
+    width: 520px;
+    height: auto;
+    padding: 10px 0;
+    background: rgba(133, 133, 133, 0.05);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#name {
+    width: 360px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 28px;
+    
+}
+
+#button {
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 24px;
+    background-color: white;
+    border: 2px solid white;
+}
+
+#button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+#alert {
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+#desk {
+    width: 80%;
+    margin-top: 10px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 465px)  {
+    h1 {
+        font-size: 70px;
+    }
+
+    h3 {
+        width: 80%;
+        text-align: center;
+    }
+
+    .container {
+        width: 84%;
+        height: auto;
+        padding: 10px 0px;
+    }
+
+    #name {
+        width: 82%;
+        margin-top: 10px;
+        font-size: 24px;
+    }
+
+    #button {
+        width: 92px;
+        height: 32px;
+        font-size: 20px;
+    }
+
+    #alert {
+        text-align: center;
+    }
+}
